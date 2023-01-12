@@ -1,2 +1,16 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    class Card {
+        constructor(number, color) {
+            this.number = number;
+            this.color = color;
+        }
+    }
+
+    let usedCards = [];
+    let playerCount;
+    let name = "dr.wulf";
+</script>
+
+<input bind:value={playerCount} placeholder="player count" />
+<h1>{playerCount}</h1>
+<h2>{name}</h2>
